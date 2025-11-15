@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="rsvp.html">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Conferma la tua partecipazione</h1>
+
+  <form name="rsvp" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="rsvp">
+
+    <label for="persona">Chi sta confermando?</label>
+    <select name="persona" id="persona" required>
+      <option value="">Seleziona il tuo nome</option>
+      <option value="sposo">Sposo</option>
+      <option value="sposa">Sposa</option>
+      <option value="laura_fioretta">Laura Fioretta</option>
+      <option value="roberto_casagranda">Roberto Casagranda</option>
+      <option value="marco_casagranda">Marco Casagranda</option>
+      <option value="nonna_anna">Nonna Anna</option>
+      <option value="renata_casagranda">Renata Casagranda</option>
+      <!-- continua con tutti gli altri invitati... -->
+    </select>
+
+    <label for="partecipazione">Parteciperai?</label>
+    <select name="partecipazione" id="partecipazione" required>
+      <option value="si">Sì, partecipo</option>
+      <option value="no">No, non posso</option>
+    </select>
+
+    <label for="allergie">Allergie</label>
+    <input type="text" name="allergie" id="allergie" placeholder="Indica eventuali allergie">
+
+    <button type="submit">Invia</button>
+  </form>
+
+  <footer>
+    <p>© Riccardo & Partner</p>
+  </footer>
+</body>
+</html>
